@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mobi.chenhao.pageview.RecyclerViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        app:singlePageFling="true"
+        app:triggerOffset="0.1" />
+
+    <RelativeLayout
+        android:id="@+id/onecode_page_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:background="#fff85b5b"/>
+
+        <ImageView
+            android:id="@+id/onecode_page_refresh_anim"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_indicator_rotate"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/onecode_page_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:background="#fff85b5b"/>
+
+        <ImageView
+            android:id="@+id/onecode_page_more_anim"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_indicator_rotate"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
